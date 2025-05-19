@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        
+      "@graphql-types/*": ["libs/graphql-types/*"]
+      }
+    },
+    "include": ["apps/**/*", "apps/libs/**/*"] 
+}

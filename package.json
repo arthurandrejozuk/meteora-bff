@@ -1,0 +1,29 @@
+{
+  "name": "nest-react",
+  "version": "1.0.0",
+  "private": true,
+   "workspaces": [ 
+    "apps/*",
+    "apps/libs/*"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:backend": "npm --workspace apps/meteora-backend start",
+    "start:frontend": "npm --workspace apps/meteora run dev",
+    "generate:backend": "npx --workspace apps/meteora-backend prisma generate",
+    "codegen:backend": "npm  --workspace apps/meteora-backend run graphql:generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurandrejozuk/meteora-bff.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arthurandrejozuk/meteora-bff/issues"
+  },
+  "homepage": "https://github.com/arthurandrejozuk/meteora-bff#readme",
+  "description": ""
+}
